@@ -3,7 +3,7 @@ import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
+  apiKey: "AIzaSyCOCIht8pytoexB3PWD7ICyYiwXWLkRG2E",
   authDomain: "reactgallery-49e45.firebaseapp.com",
   projectId: "reactgallery-49e45",
   storageBucket: "reactgallery-49e45.appspot.com",
