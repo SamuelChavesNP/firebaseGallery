@@ -5,8 +5,6 @@ import { Photo } from "./types/Photo";
 import { PhotoItem } from "./components/PhotoItem";
 import {FormEvent} from 'react';
 
-document.title = 'Firebase Gallery';
-
 const App = () => {
 
   const [upLoading, setUpLoading] = React.useState(false);
