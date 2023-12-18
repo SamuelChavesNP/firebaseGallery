@@ -1,9 +1,8 @@
 /* eslint-disable prefer-const */
-import React from "react";
 import { getAll, insert } from "./services/photos";
 import { Photo } from "./types/Photo";
 import { PhotoItem } from "./components/PhotoItem";
-import {FormEvent} from 'react';
+import React, {FormEvent} from 'react';
 
 const App = () => {
 
@@ -27,6 +26,7 @@ const App = () => {
       } else {
         let newPhotoList = [...photos];
         newPhotoList.push(result)
+        setPhotos(newPhotoList);
       }
     }
   }
@@ -47,8 +47,12 @@ const App = () => {
 
         <form method="POST" onSubmit={handleSubmit}>
           <input type="file" name="image"/>
-          <input type="submit" value="Enviar"/>
-          {upLoading && <div>Enviando... </div>}
+          
+          <div className="flex-input">
+            <input type="submit" value="Enviar"/>
+            {upLoading && <div>Enviando... </div>}
+          </div>
+
         </form>
 
        {loading && <div className="custom-loader"></div> }
@@ -62,10 +66,7 @@ const App = () => {
           </div>}
       </div>
 
-    
-
     </div>
   )
 }
-
 export default App;
