@@ -44,14 +44,6 @@ form {
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flex-input div{
-  margin-left: 30px;
-  margin-top: 10px;
 }
 
 input[type=submit] {
