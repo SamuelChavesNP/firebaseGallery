@@ -40,7 +40,7 @@ const App = () => {
     }
     getPhotos();
 },[]);
-  document.tile = "Galeria de Fotos";
+  document.title = "Galeria de Fotos";
   
   return (
     <div className="container">
